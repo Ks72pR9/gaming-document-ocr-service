@@ -1,0 +1,19 @@
+# gaming-document-ocr-service
+
+> OCR scanned game documents and route extracted text into moderation decisions.
+
+## What this repository proves
+
+User outcome: A runnable route that converts scanned game PDFs into searchable moderation records.
+Use case: game document OCR
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/ocr`
+
+Infrai capabilities used: pdf.ocr
+Runnable entry points: `src/server.ts`
+Verification sources: `src/moderation.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

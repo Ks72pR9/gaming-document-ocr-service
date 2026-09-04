@@ -1,0 +1,11 @@
+{
+  "name": "gaming-document-ocr-service",
+  "private": true,
+  "type": "module",
+  "dependencies": { "zod": "^3.23.8" },
+  "scripts": {
+    "start": "node --experimental-strip-types src/server.ts",
+    "test": "node --experimental-strip-types src/moderation.test.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}
